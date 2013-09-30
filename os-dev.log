@@ -1,0 +1,15 @@
+2013年09月30日 00时40分06秒
+---------------------------------------
+环境配置：
+  安装 virtualbox 以及 nasm:
+   apt-get install virtualbox nasm
+  创建 virtualbox 虚拟机
+  为 virtualbox 虚拟机添加软盘控制器
+  编写 boot.asm
+  使用 nasm 命令: 
+    nasm boot.asm -o boot.bin
+  将 boot.bin 写入一个软盘镜像 boot.img 内
+    dd if=boot.bin of=boot.img bs=512 count=1
+  为 virtualbox 虚拟机加载 boot.img
+  启动 virtualbox 虚拟机
+  屌爆啦！
