@@ -16,8 +16,8 @@ Display:
   ret
 
 BootMessage:
-  db "Hello, World"
+  db "Hello, World!"
 
-times 510-($-$$)
+times 510-($-$$) db 0
 
 dw 0xaa55
